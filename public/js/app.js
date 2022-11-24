@@ -78,7 +78,7 @@ var usuario;
 
 //Init de la camara class
 //document.getElementById('player');
-const camara = new Camara( $('#palyer') [0]);
+const camara = new Camara( $('#player') [0]);
 
 
 
@@ -522,7 +522,12 @@ btnPhoto.on('click', () => {
 btnTomarFoto.on('click', () => {
 
     console.log('Botón tomar foto');
+
+    foto = camara.tomarfoto();
+
+    camara.apagar();
     
+    console.log(foto);
 });
 
 
